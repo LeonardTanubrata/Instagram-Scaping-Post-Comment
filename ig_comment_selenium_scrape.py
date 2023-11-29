@@ -23,12 +23,12 @@ driver = webdriver.Chrome()
 driver.get("https://www.instagram.com/accounts/login/")
 
 # Input instagram username and password
-username = "kemang.ol"
-password = "kemangOlrange@999"
+username = ""
+password = ""
 
 # Input instagram post id. Post id is 11 unique code for every instagram link
 # If you want to mined more than one content, then seperate the post id using comma     
-post_id = ['CxSSmOUry2W']
+post_id = ['']
                 
 scroll_count = 10 # You can adjust the number of scrolls as needed.
 
@@ -73,6 +73,8 @@ for post in post_id :
                 except :
                      break
 
+        # Open this code below and comment the for loop code above for infinite scroll
+      
         # previous_height = driver.execute_script("return arguments[0].scrollHeight", comment_section_element)
         # print('Scrolling Begin')
         # while True:
